@@ -35,3 +35,6 @@ https://github.com/KIMJIHYUN0513/dkufestival_2019.git
 - 팁 : br태그 대신 스페이스바 두번으로 line break가 가능합니다♡
 
 ---
+donggyu
+ehdrb1
+(헤로쿠 superuser)
