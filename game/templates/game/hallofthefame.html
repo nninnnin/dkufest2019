@@ -19,9 +19,11 @@ form{
     display:flex;
     justify-content:center;
 }
-
+form div{
+    width:65%;
+}
 form div input{
-    width:55vw;
+    width:100%;
 }
 
 
@@ -44,6 +46,10 @@ form div input{
     </h1>
 {% endif %}
 
+{% load tz %}
+
+{% timezone "Asia/Seoul" %}
+
 {% if records is not none %}
     <div class="records">
         {% for record in records.all  %}
@@ -57,6 +63,7 @@ form div input{
     <br><br>
 {% endif %}
 
+{% endtimezone %}
 
 {% if records is none %}
 
