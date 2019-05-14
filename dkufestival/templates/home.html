@@ -3,9 +3,9 @@
     .container{
         display:grid;
         grid-template-columns:1fr 1fr;
-        grid-gap:5vw;
-        width:70vw;
-        height:70vw;
+        grid-gap:5%;
+        width:70%;
+        height:65%;
         position:relative;
         top:-20px;
     }
@@ -46,7 +46,7 @@
     }
     .d-day{
         text-align:center;
-        min-height:2em;
+        min-height:1.5em;
         font-size:1em;
     }
 
@@ -58,6 +58,7 @@
 
 
     </style>
+    
 </head>
 <body>
 
@@ -65,8 +66,8 @@
 
     {% block content %}
 
-
     {% load static %}
+
     <div class="timer">
         <div class="clock">
             D A N F E S T A
@@ -100,7 +101,7 @@
         </div>
     </div>
 
-
+    <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
     <script>
         const clock = document.querySelector('.clock');
         const dday = document.querySelector('.d-day');
