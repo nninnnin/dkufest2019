@@ -12,14 +12,14 @@
     .contents{
         display:flex;
         flex-direction:column;
-        justify-content:center;
+        justify-content:space-around;
         align-items:center;
     }
     .timer{
-        position:relative;
         color:white;
         font-weight:700;
         font-size:1.5em;
+        margin-bottom:1em;
     }
     .btn{
         height:100%;
@@ -42,11 +42,13 @@
         text-decoration:none;
     }
     .clock{
+        padding-top:0.7em;
         text-align:center;
+        min-height:1.5em;
     }
     .d-day{
         text-align:center;
-        min-height:1.5em;
+        min-height:1em;
         font-size:1em;
     }
 
@@ -71,23 +73,22 @@
     <div class="timer">
         <div class="clock">
             D A N F E S T A
-        </div><br>
+        </div>
         <div class="d-day">
         </div>
     </div>
     
-    <br><br>
 
     <div class="container">
         <div class="btn">
             <a href="{% url 'schedule' %}"><img src="{% static 'icons/calender.svg' %}" alt="" width="55%" style="position:relative;top:8;"></a>
             <br>
-            <a href="{% url 'schedule' %}">이벤트</a>
+            <a href="{% url 'schedule' %}">이벤트/정보</a>
         </div>
         <div class="btn">
             <a href="{% url 'map' %}"><img src="{% static 'icons/map.svg' %}" alt="" width="55%" style="position:relative;top:7;"></a>
             <br>
-            <a href="{% url 'map' %}">지도</a>
+            <a href="{% url 'map' %}">지도로 찾기 </a>
         </div>
         <div class="btn">
             <a href="{% url 'game' %}"><img src="{% static 'icons/puzzle.svg' %}" alt="" width="55%" style="position:relative;left:4;top:8"></a>
@@ -97,7 +98,7 @@
         <div class="btn">
             <a href="{% url 'write' %}"><img src="{% static 'icons/footprint.svg' %}" alt="" width="55%" style="position:relative;left:5;top:6;"></a>
             <br>
-            <a href="{% url 'write' %}">방명록</a>
+            <a href="{% url 'write' %}">방명록(한마디)</a>
         </div>
     </div>
 
